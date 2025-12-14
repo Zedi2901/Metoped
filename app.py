@@ -98,7 +98,7 @@ if st.button("🚀 Prediksi Kategori"):
     if mode == "Advanced":
         st.subheader("📊 Confidence Probabilitas")
 
-        fig, ax = plt.subplots(figsize=(4, 2.5))
+        fig, ax = plt.subplots()
         ax.barh(label_encoder.classes_, probability)
         ax.set_xlabel("Probabilitas")
         ax.set_xlim(0, 1)
@@ -116,4 +116,5 @@ Teknik Informatika
 </p>
 
 """, unsafe_allow_html=True)
+
 
