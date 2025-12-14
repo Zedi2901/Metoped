@@ -96,15 +96,14 @@ if st.button("🚀 Prediksi Kategori"):
     # PROBABILITY VISUALIZATION
     # ==================================================
     if mode == "Advanced":
-    st.subheader("📊 Confidence Probabilitas")
+        st.subheader("📊 Confidence Probabilitas")
 
-    fig, ax = plt.subplots(figsize=(4, 2.5))
-    ax.barh(label_encoder.classes_, probability)
-    ax.set_xlabel("Probabilitas")
-    ax.set_xlim(0, 1)
-    ax.grid(axis="x", linestyle="--", alpha=0.4)
+        fig, ax = plt.subplots(figsize=(4, 2.5))
+        ax.barh(label_encoder.classes_, probability)
+        ax.set_xlabel("Probabilitas")
+        ax.set_xlim(0, 1)
 
-    st.pyplot(fig)
+        st.pyplot(fig)
 
 # ======================================================
 # FOOTER
@@ -117,3 +116,4 @@ Teknik Informatika
 </p>
 
 """, unsafe_allow_html=True)
+
